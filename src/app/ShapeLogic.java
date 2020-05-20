@@ -31,6 +31,7 @@ public class ShapeLogic {
 
             }
         }while (options != Options.EXIT);
+        dataReader.close();
     }
 
     private Options getOptions(){
