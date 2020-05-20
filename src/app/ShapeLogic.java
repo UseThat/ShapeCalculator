@@ -8,6 +8,10 @@ public class ShapeLogic {
     DataReader dataReader = new DataReader(printer);
 
     public ShapeLogic(){
-        dataReader.calculateCircle();
+        controlLoop();
+    }
+
+    private void controlLoop(){
+
     }
 }
