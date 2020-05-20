@@ -45,7 +45,7 @@ public class ShapeLogic {
                 isOptionsOk = true;
             }catch (NoSuchOptionsExceptions ex){
                 printer.printLine(ex.getMessage() + ", try one more time");
-            }catch(InputMismatchException ex){
+            }catch(InputMismatchException ignored){
                 printer.printLine("This is not number!");
             }
         }

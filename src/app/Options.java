@@ -35,7 +35,7 @@ public enum Options {
         try {
             return Options.values()[option];
         }catch (ArrayIndexOutOfBoundsException ex){
-            throw new NoSuchOptionsExceptions("We don't have that options" + option);
+            throw new NoSuchOptionsExceptions("We don't have that option " + option);
         }
     }
 }
