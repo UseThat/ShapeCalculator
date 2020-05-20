@@ -1,5 +1,9 @@
 package app;
 
+import exceptions.NoSuchOptionsExceptions;
+
+import java.util.InputMismatchException;
+
 public enum Options {
     EXIT(0,"Exit"),
     RECTANGLE(1,"Calculate Rectangle"),
@@ -27,7 +31,11 @@ public enum Options {
         return value +" - "+ description;
     }
 
-    static Options createFromInt(int option){
-        return Options.values()[option];
+    static Options createFromInt(int option) throws NoSuchOptionsExceptions{
+        try {
+            return Options.values()[option];
+        }catch (ArrayIndexOutOfBoundsException ex){
+            throw new NoSuchOptionsExceptions("We don't have that options" + option);
+        }
     }
 }

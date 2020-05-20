@@ -1,5 +1,6 @@
 package app;
 
+import exceptions.NoSuchOptionsExceptions;
 import io.ConsolePrinter;
 import io.DataReader;
 
@@ -42,8 +43,10 @@ public class ShapeLogic {
             try {
                 options = Options.createFromInt(dataReader.getInt());
                 isOptionsOk = true;
+            }catch (NoSuchOptionsExceptions ex){
+                printer.printLine(ex.getMessage() + ", try one more time");
             }catch(InputMismatchException ex){
-                printer.printLine("We don't have that options. Try again");
+                printer.printLine("This is not number!");
             }
         }
         return options;
