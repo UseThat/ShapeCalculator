@@ -35,6 +35,8 @@ public class DataReader {
             printer.printLine(circle.toString());
         } catch (InputMismatchException ex) {
             printer.printLine("Problem with calculations");
+        }finally {
+            scanner.nextLine();
         }
 
     }
@@ -49,6 +51,8 @@ public class DataReader {
             printer.printLine(rectangle.toString());
         } catch (InputMismatchException ex) {
             printer.printLine("Problem with calculations");
+        }finally {
+            scanner.nextLine();
         }
     }
 
@@ -66,6 +70,8 @@ public class DataReader {
             printer.printLine(triangle.toString());
         } catch (InputMismatchException ex) {
             printer.printLine("Problem with calculations");
+        }finally {
+            scanner.nextLine();
         }
     }
 }
