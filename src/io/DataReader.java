@@ -18,6 +18,13 @@ public class DataReader {
         scanner.close();
     }
 
+    public int getInt(){
+        try {
+            return scanner.nextInt();
+        }finally {
+            scanner.nextLine();
+        }
+    }
 
     public void calculateCircle(){
         printer.printLine("Set R: ");
