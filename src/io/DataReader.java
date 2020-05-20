@@ -2,6 +2,7 @@ package io;
 
 import Model.Circle;
 import Model.Rectangle;
+import Model.Triangle;
 
 import java.util.Scanner;
 
@@ -33,5 +34,18 @@ public class DataReader {
         double b = scanner.nextDouble();
         Rectangle rectangle = new Rectangle(a,b);
         printer.printLine(rectangle.toString());
+    }
+
+    public void calculateTriangle(){
+        printer.printLine("Set A: ");
+        double a = scanner.nextDouble();
+        printer.printLine("Set B: ");
+        double b = scanner.nextDouble();
+        printer.printLine("Set C: ");
+        double c = scanner.nextDouble();
+        printer.printLine("Set H: ");
+        double h = scanner.nextDouble();
+        Triangle triangle = new Triangle(a,b,c,h);
+        printer.printLine(triangle.toString());
     }
 }
