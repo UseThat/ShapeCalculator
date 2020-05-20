@@ -16,7 +16,7 @@ public class DataReader {
         printer.printLine("Set R: ");
         double r = scanner.nextDouble();
         Circle circle = new Circle(r);
-        printer.printLine("Area for circle "+ circle.calculateArea());
-        printer.printLine("");
+        printer.printLine(circle.toString());
+
     }
 }
