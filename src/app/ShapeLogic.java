@@ -12,6 +12,13 @@ public class ShapeLogic {
     }
 
     private void controlLoop(){
+        getOptions();
+    }
 
+    private void getOptions(){
+        printer.printLine("Choose options:");
+        for(Options options : Options.values()){
+            printer.printLine(options.toString());
+        }
     }
 }
