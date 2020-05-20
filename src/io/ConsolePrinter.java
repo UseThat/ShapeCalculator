@@ -6,4 +6,6 @@ public class ConsolePrinter {
         System.out.println(text);
     }
 
+
+
 }

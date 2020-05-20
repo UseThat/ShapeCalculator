@@ -24,4 +24,9 @@ public class Circle implements Shape{
     public double calculatePerimeter() {
         return 2 * PI * r;
     }
+
+    @Override
+    public String toString() {
+        return  "Circle area "+calculateArea() + " and Perimeter "+calculatePerimeter();
+    }
 }

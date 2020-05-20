@@ -34,4 +34,9 @@ public class Rectangle implements Shape{
     public double calculatePerimeter() {
         return 2*a+2*b;
     }
+
+    @Override
+    public String toString() {
+        return  "Rectangle area "+calculateArea() + " and Perimeter "+calculatePerimeter();
+    }
 }

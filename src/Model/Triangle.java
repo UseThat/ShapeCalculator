@@ -51,4 +51,9 @@ public class Triangle implements Shape {
     public double calculatePerimeter() {
         return a+b+c;
     }
+
+    @Override
+    public String toString() {
+        return  "Triangle area "+calculateArea() + " and Perimeter "+calculatePerimeter();
+    }
 }
